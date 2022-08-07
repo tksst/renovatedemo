@@ -20,6 +20,6 @@
   ],
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["before 3am on the first day of the month", "* 17 7 8"]
+    "schedule": ["before 3am on the first day of the month", "* 17 7 8 *"]
   }
 }
