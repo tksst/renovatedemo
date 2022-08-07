@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
+  "extends": ["config:base", ":label(dependencies)", ":timezone(Asia/Tokyo)"],
   "separateMultipleMajor": true,
   "packageRules": [
     {
@@ -17,5 +17,9 @@
       "matchDepTypes": ["devDependencies"],
       "groupName": "devDependencies"
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 3am on the first day of the month", "* 17 7 17"]
+  }
 }
