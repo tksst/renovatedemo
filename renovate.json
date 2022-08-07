@@ -19,6 +19,8 @@
     }
   ],
   "lockFileMaintenance": {
-    "enabled": true
+    "enabled": true,
+    "schedule": ["at any time"],
+    "automerge": true
   }
 }
