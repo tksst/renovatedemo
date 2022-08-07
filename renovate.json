@@ -1,4 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>tksst/renovate-config"]
+  "extends": ["github>tksst/renovate-config"],
+  "packageRules": [
+    {
+      // GitHub Actions の更新をまとめる
+      "groupName": "GitHub Actions",
+      "matchManagers": ["github-actions"],
+      "pinDigests": true
+    }
+  ]
 }
