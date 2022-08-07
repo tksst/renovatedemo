@@ -4,6 +4,12 @@
   "separateMultipleMajor": true,
   "packageRules": [
     {
+      "matchPackagePatterns": ["^@types/node$"],
+      "major": {
+        "enabled": false
+      }
+    },
+    {
       "matchDepTypes": ["dependencies"],
       "groupName": "dependencies"
     },
