@@ -1,4 +1,4 @@
 module.exports = {
-    ...require("@tksst/prettier-config"),
-    useTabs: true,
+	...require("@tksst/prettier-config"),
+	useTabs: true,
 };
