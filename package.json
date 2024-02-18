@@ -48,6 +48,5 @@
 		"renovate": "32.166.0",
 		"semantic-release": "19.0.3",
 		"ts-node": "10.9.1"
-	},
-	"packageManager": "npm@8.16.0"
+	}
 }
