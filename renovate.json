@@ -1,9 +1,4 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["github>tksst/renovate-config"],
-	"enabled": false,
-	"schedule": ["after 2am before 6am"],
-	"updateNotScheduled": false,
-	"stabilityDays": 2,
-	"internalChecksFilter": "flexible"
+	"extends": ["github>tksst/renovate-config"]
 }
