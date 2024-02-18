@@ -24,7 +24,7 @@
 	"dependencies": {
 		"@swc/core": "1.2.224",
 		"@swc/jest": "0.2.22",
-		"@tksst/eslint-config": "11.5.0",
+		"@tksst/eslint-config": "6.0.0",
 		"@tksst/prettier-config": "1.0.5",
 		"@types/jest": "28.1.6",
 		"better-typescript-lib": "2.1.0",
