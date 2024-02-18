@@ -16,7 +16,7 @@ dependencies:
     version: 11.5.0(eslint-plugin-import@2.29.1)(eslint@8.56.0)(jest@28.1.3)(typescript@4.7.4)
   '@tksst/prettier-config':
     specifier: 1.0.5
-    version: 1.0.5(prettier@2.7.1)
+    version: 1.0.5(prettier@3.2.5)
   '@types/jest':
     specifier: 28.1.6
     version: 28.1.6
@@ -33,8 +33,8 @@ dependencies:
     specifier: 28.1.3
     version: 28.1.3(@types/node@12.20.55)(ts-node@10.9.1)
   prettier:
-    specifier: 2.7.1
-    version: 2.7.1
+    specifier: 3.2.5
+    version: 3.2.5
   tsup:
     specifier: 6.2.1
     version: 6.2.1(@swc/core@1.2.224)(ts-node@10.9.1)(typescript@4.7.4)
@@ -3326,12 +3326,12 @@ packages:
       - typescript
     dev: false
 
-  /@tksst/prettier-config@1.0.5(prettier@2.7.1):
+  /@tksst/prettier-config@1.0.5(prettier@3.2.5):
     resolution: {integrity: sha512-HrZJ1RmLNKQxhqP9r7ZARJMV5CAaasxf1l1vxOmW/CW+r7Wbgtlcj8Oxz83BOwdOx4ehozN38jGbTGPfrLKuYA==}
     peerDependencies:
       prettier: '*'
     dependencies:
-      prettier: 2.7.1
+      prettier: 3.2.5
     dev: false
 
   /@tootallnate/once@2.0.0:
@@ -6131,6 +6131,7 @@ packages:
 
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
+    requiresBuild: true
 
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -6759,6 +6760,7 @@ packages:
 
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    requiresBuild: true
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
@@ -8920,17 +8922,17 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  /prettier@2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    dev: false
-
   /prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
 
   /pretty-bytes@5.6.0:
     resolution: {integrity: sha512-FFw039TmrBqFK8ma/7OL3sDz/VytdtJr044/QUJtH0wK9lb9jLq9tJyIxUwtQJHwar2BqtiA4iCWSwo9JLkzFg==}
