@@ -1,0 +1,46 @@
+name: Build, Lint and Test
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches-ignore:
+      # When you enable the release workflow, change the line below to your main branch
+      # to avoid the duplicate action worktime.
+      - change-this-to-default-branch-when-the-release-workflow-enabled
+
+jobs:
+  test:
+    permissions:
+      contents: read
+      actions: read
+    timeout-minutes: 10
+
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Collect Workflow Telemetry
+        uses: catchpoint/workflow-telemetry-action@94c3c3d9567a0205de6da68a76c428ce4e769af1 # v2.0.0
+
+      - name: Checkout the source
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          show-progress: false
+          submodules: recursive
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3.0.0
+        with:
+          standalone: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - run: pnpm test
