@@ -74,8 +74,8 @@ devDependencies:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
   renovate:
-    specifier: 37.214.1
-    version: 37.214.1(typanion@3.14.0)
+    specifier: 37.215.1
+    version: 37.215.1(typanion@3.14.0)
   semantic-release:
     specifier: 23.0.2
     version: 23.0.2(typescript@5.3.3)
@@ -9768,8 +9768,8 @@ packages:
       - supports-color
     dev: true
 
-  /renovate@37.214.1(typanion@3.14.0):
-    resolution: {integrity: sha512-B+Kecpv5Z9t7vAXunjaCZis5KGUAEd/PiI/Is4L0TMMEMALQnqcEF3OuxDPaczL3/MzyFyRU+7O1W21/WF1jVQ==}
+  /renovate@37.215.1(typanion@3.14.0):
+    resolution: {integrity: sha512-BbcD6/u5o7TAKO10aEjcfEp/Jj7ckohHsxBUIS39fUBXV2dP2tcksDzCBICyvWxbhYg8MZRcar8FSfgM6U/tKg==}
     engines: {node: ^18.12.0 || >=20.0.0, pnpm: ^8.0.0}
     hasBin: true
     dependencies:
