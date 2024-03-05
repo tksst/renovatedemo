@@ -3,5 +3,6 @@
 	"extends": ["github>tksst/renovate-config"],
 	"prCreation": "immediate",
 	"automerge": true,
-	"platformAutomerge": true
+	"platformAutomerge": true,
+	"enabled": false
 }
